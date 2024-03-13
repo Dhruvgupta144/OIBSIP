@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255,0.5), rgba(255, 255, 255, 0.2)), url("form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.box{
+    max-width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color:transparent;
+    position: absolute;
+    padding: 50px 70px 70px;
+    border: 5px solid black;
+    border-radius: 10%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(0, 50, 255);
+    margin-bottom: 60px;
+}
+
+.inputbox{
+    display: flex;
+    align-items: center;
+    background-color: azure;
+    margin: 15px 0px;
+    border-radius: 2rem;
+    padding-left: 5px;
+    border: 1px solid black;
+    max-height: 60px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.inputbox:hover{
+    border: 2px solid black;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+input{
+    padding:1rem;
+    padding-left: 1rem;
+    border:none;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+.btnbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+button{
+    
+    background-color: #4102a5;
+    color: aliceblue;
+    height: 30px;
+    width: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius:10%;
+    bottom: 0px;
+    outline: 0px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button:hover{
+    background-color:#6107f2 ;
+}
+
+.disable{
+    background-color: grey;
+    color:#555;
+}

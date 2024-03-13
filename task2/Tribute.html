@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .con {
+            background-color: black;
+            background-image: linear-gradient(to top, rgba(255, 255, 255), rgba(255, 255, 255, 0.2)), url("missile.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .image {
+            height: 300px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border: 1px solid black;
+            box-shadow: 0px 0px 25px black;
+            overflow: hidden;
+
+        }
+
+        .content {
+            height: 60vh;
+            width: 100%;
+            background-color: black;
+            text-align: center;
+        }
+
+        .scroll {
+            height: 50vh;
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            list-style: none;
+        }
+
+        button {
+            border: none;
+            background: none;
+            font-size: 20px;
+            color: silver;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button:hover {
+            font-size: 25px;
+            color: gold;
+
+        }
+
+        h1 {
+            color: gold;
+            display: inline;
+            padding: 20px;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+
+        p {
+            color: silver;
+            padding: 10px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p:hover {
+            font-size: 25px;
+        }
+
+        #name {
+            float: right;
+        }
+
+        /* CSS for responsiveness */
+        @media only screen and (max-width: 500px) {
+            button {
+                font-size: 10px;
+            }
+            img {
+                height: 300px;
+                width: 300px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="navbar">
+            <li><button onclick="about()"><b>ABOUT</b></li>
+            <li><button onclick="president()"><b>PRESIDENT</b></button></li>
+            <li><button onclick="missile_man()"><b>MISSILE MAN</b></button></li>
+            <li><button onclick="bhart_ratn()"><b>BHART RATN</b></button></li>
+
+        </div>
+        <div class="image">
+            <img src="apj.png">
+        </div>
+        <div class="content">
+            <h1 class="h">ACHIVEMENT</h1>
+            <div class="scroll">
+                <p class="p">
+
+                    Dr. APJ Abdul Kalam, the eminent scientist and former President of India, left an enduring legacy of
+                    innovation, leadership, and inspiration. His contributions to India's space and missile technology,
+                    including pivotal roles in projects like the Satellite Launch Vehicle (SLV), Aryabhata satellite,
+                    and the development of strategic missiles such as Agni and Prithvi, bolstered the nation's defense
+                    capabilities significantly. Dr. Kalam's leadership in the nuclear domain, notably during the
+                    Pokhran-II nuclear tests, showcased India's prowess in nuclear technology. Beyond his scientific
+                    achievements, Dr. Kalam was a passionate advocate for education and youth empowerment. Through his
+                    speeches, writings, and interactions with students, he motivated millions to pursue excellence and
+                    contribute to nation-building. His humility, accessibility, and unwavering commitment to serving
+                    humanity earned him widespread admiration. Honored with numerous accolades, including the Bharat
+                    Ratna, India's highest civilian award, Dr. Kalam's impact transcends borders, inspiring people
+                    globally. His vision of a developed India, propelled by science, technology, and compassion,
+                    continues to guide generations, reminding us of the transformative power of determination and
+                    leadership in shaping a brighter future.
+                </p>
+                <hr>
+                <P id="name">~Dhruv Gupta </P>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function about() {
+        const heading = "PERSONAL INFORMATION";
+        document.getElementsByClassName('h')[0].innerHTML = heading;
+        const para = "Dr. APJ Abdul Kalam, born on October 15, 1931, in the humble town of Rameswaram in Tamil Nadu, India, emerged as a beacon of inspiration and excellence. Coming from a modest background, his early life was marked by diligence and a thirst for knowledge. Kalam excelled academically, earning degrees in aerospace engineering from Madras Institute of Technology and later pursuing a career in defense research and development. His brilliance in science and technology propelled him to significant roles in organizations like the Indian Space Research Organisation (ISRO) and the Defense Research and Development Organisation (DRDO). As a scientist, Kalam played a pivotal role in India's missile and nuclear programs, earning him the moniker 'Missile Man of India'. Beyond his scientific endeavors, Dr. Kalam was renowned for his humility, integrity, and dedication to serving humanity. His presidency from 2002 to 2007 was marked by his commitment to education, youth empowerment, and societal development. Despite his towering achievements, Kalam remained deeply rooted in his values, often emphasizing the importance of hard work, perseverance, and compassion. His legacy continues to inspire millions worldwide, embodying the true essence of leadership, innovation, and service to society";
+        document.getElementsByClassName('p')[0].innerHTML = para;
+    }
+    function president() {
+        const heading = "A.P.J. ABDUL KALAM : PRESIDENT";
+        document.getElementsByClassName('h')[0].innerHTML = heading;
+        const para = "During his presidency from 2002 to 2007, Dr. APJ Abdul Kalam embarked on a transformative journey aimed at fostering national development, particularly through education, innovation, and societal empowerment. As President, he focused on inspiring the youth to pursue excellence in science and technology, emphasizing the importance of education as a catalyst for societal progress. Dr. Kalam's presidency was characterized by his visionary leadership and tireless efforts to connect with people from all walks of life, especially the youth, whom he saw as the driving force for India's future. He traveled extensively across the country, engaging with students, educators, and grassroots communities, encouraging them to dream big and work towards realizing their aspirations. Additionally, Dr. Kalam advocated for inclusive growth, stressing the need for equitable access to opportunities and resources for all sections of society. His presidency was marked by initiatives promoting rural development, healthcare, and environmental conservation, reflecting his commitment to building a more prosperous and sustainable India. Throughout his tenure, Dr. Kalam remained a beacon of hope and inspiration, embodying the values of integrity, humility, and service to the nation. His legacy as President continues to inspire generations, reminding us of the transformative power of visionary leadership and inclusive governance.";
+        document.getElementsByClassName('p')[0].innerHTML = para;
+    }
+    function missile_man() {
+        const heading = "A.P.J. ABDUL KALAM : MISSILE MAN"
+        document.getElementsByClassName('h')[0].innerHTML = heading;
+        const para = "Dr. APJ Abdul Kalam's journey as the 'Missile Man of India' was one of pioneering innovation, strategic vision, and unwavering dedication to advancing India's defense capabilities. Leading various initiatives within the Defense Research and Development Organization (DRDO) and later as a key figure in the Indian Space Research Organisation (ISRO), Dr. Kalam played a pivotal role in catapulting India into the league of nations possessing advanced missile technology. His contributions encompassed the successful development and deployment of strategic missiles like Agni and Prithvi, which significantly bolstered India's defense readiness and deterrence capabilities. Dr. Kalam's leadership, coupled with his scientific acumen and relentless pursuit of excellence, enabled India to achieve self-reliance in missile technology, reducing dependence on foreign imports. His visionary approach and emphasis on indigenous research and development laid the foundation for India's emergence as a global player in the field of missile technology. Dr. Kalam's legacy as the 'Missile Man' remains a testament to his commitment to national security and scientific advancement, inspiring generations of scientists and engineers to push the boundaries of innovation in service of the nation.";
+        document.getElementsByClassName('p')[0].innerHTML = para;
+    }
+    function bhart_ratn() {
+        const heading = "A.P.J. ABDUL KALAM : BHART RATN";
+        document.getElementsByClassName('h')[0].innerHTML = heading;
+        const para = "Dr. APJ Abdul Kalam was conferred the Bharat Ratna, India's highest civilian honor, in recognition of his exceptional contributions to science, technology, and national development. Kalam's journey from a humble background to becoming a renowned scientist and eventually the President of India epitomized the values of hard work, perseverance, and dedication. His pioneering work in missile technology, particularly his leadership in projects like the Agni and Prithvi missiles, significantly enhanced India's defense capabilities, earning him the moniker 'Missile Man of India'. Additionally, Kalam's contributions to India's space program, his advocacy for education, and his vision of a developed and self-reliant India garnered widespread admiration and respect across the nation.Moreover, Kalam's humility, integrity, and commitment to serving humanity resonated deeply with the people of India, transcending boundaries of region, religion, and socioeconomic status. His presidency from 2002 to 2007 further solidified his stature as a beloved national figure, known for his accessibility and genuine concern for the welfare of the people. The decision to award him the Bharat Ratna was a reflection of his extraordinary achievements, his exemplary leadership, and his profound impact on Indian society, cementing his place as one of the most revered and cherished personalities in Indian history.";
+        document.getElementsByClassName('p')[0].innerHTML = para;
+    }
+</script>
+
+</html>

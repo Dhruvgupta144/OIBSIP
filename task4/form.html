@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Append Array on Button Click</title>
+  <link rel="stylesheet" href="form.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1 id="heading">sign up</h1>
+      <div class="inputbox">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <input type="text" id="name" placeholder="full name">
+      </div>
+      <div class="inputbox">
+        <ion-icon name="mail-outline"></ion-icon>
+        <input type="text" id="email" placeholder="E-mail">
+      </div>
+      <div class="inputbox">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <input type="password" id="password" placeholder="password">
+      </div>
+      <div class="btnbox">
+        <button id="createuser">create</button>
+        <button onclick="login()" id="login">login</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+
+</html>
